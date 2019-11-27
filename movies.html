@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Filmer</title>
+  <style>
+       body {
+          margin: 0;
+          background-color: darkcyan;
+      }
+
+      header {
+          background-color: coral;
+          width: 100%;
+          height: 125px;
+          text-align: center;
+       
+        }
+      h1{
+          margin: 0;
+          line-height: 125px;
+          }
+      
+      ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+footer{
+    background-color: black;
+    color:white;
+    width: 100%;
+    height: 120px;
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   text-align: center;
+}
+table, th, td {
+  border: 2px solid black;
+  
+  text-align: center;
+  color:white;
+  margin: 0 auto;
+}
+th {
+  padding: 15px;
+}
+table{
+    border-collapse: collapse;
+
+}
+.container{
+    margin-top: 100px;
+}
+</style>
+
+</head>
+<body>
+    <header>
+        <h1>Favoritfilmer</h1>
+        <ul>
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="om.html">Om mig</a></li>
+                <li><a class="active" href="movies.html">Filmer</a></li>
+                <li><a href="links.html">Länkar</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+              </ul>
+              
+    </header>
+    <div class="container">
+    <table style="width:50%">
+        <thead>
+            <tr>
+              <th>Titel</th>
+              <th>Genre</th>
+              <th>Huvudperson</th>
+              <th>Betyg</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+             <td>Gladiatorn</td>
+             <td>Action, äventyr, drama</td>
+             <td>Russel Crowe</td>
+             <td>8,5</td>
+           </tr>
+           <tr>
+              <td>Pianisten</td>
+              <td>Drama</td>
+              <td>Adrien Brody</td>
+              <td>8,5</td>
+            </tr>
+            <tr>
+               <td>Familjetrippen</td>
+               <td>Komedi</td>
+               <td>Jason Sudeikis, Jennifer Aniston</td>
+               <td>7,0</td>
+             </tr>
+             <tr>
+                    <td>Frost</td>
+                    <td>Animerat, komedi</td>
+                    <td>Elsa, Anna</td>
+                    <td>7,5</td>
+                  </tr>
+                </tbody>
+          </table>
+        </div>
+
+    <footer>
+        <div>&copy Mikael Jönsson</div>
+
+    </footer>
+   
+</body>
+</html>

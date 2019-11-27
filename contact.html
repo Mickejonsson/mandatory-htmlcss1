@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Kontakt</title>
+  <style>
+       body {
+          margin: 0;
+          background-color: darkcyan;
+      }
+
+      header {
+          background-color: coral;
+          width: 100%;
+          height: 125px;
+          text-align: center;
+       
+        }
+      h1{
+          margin: 0;
+          line-height: 125px;
+          }
+      
+      header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  
+}
+
+header li {
+  float: left;
+}
+
+header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+
+  header li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+footer{
+    background-color: black;
+    color:white;
+    width: 100%;
+    height: 120px;
+    
+   left: 0;
+   bottom: 0;
+   text-align: center;
+}
+
+
+.container{
+  margin: 0 auto;
+    margin-top: 100px;
+    width: 800px; 
+    margin-bottom: 120px;
+   
+    
+}
+
+
+</style>
+
+</head>
+<body>
+    <header>
+        <h1>Mina länkar</h1>
+        <ul>
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="om.html">Om mig</a></li>
+                <li><a href="movies.html">Filmer</a></li>
+                <li><a href="links.html">Länkar</a></li>
+                <li><a class="active" href="contact.html">Kontakt</a></li>
+              </ul>
+              
+    </header>
+    <div class="container">
+        <form action="/action_page.php"></form>
+
+        <p><label for="name">Namn:</label></p>
+        <input type="text" name="name" id="name" placeholder="För och efternamn" required>
+        <p><label for="email">Epostadress:</label></p>
+        <input type="email" name="email" id="email" placeholder="Ange e-postadress" required>
+        <p>Välj vad ni önskar kontakta om och skriv din fråga:</p>
+
+
+        <select name="Ämne">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="javascript">JavaScript</option>
+        <option value="sql">SQL</option>
+        </select>
+        <br><br>
+
+        <textarea name="message" rows="10" cols="30"></textarea>
+        <br>
+        <input type="submit">
+        </form>
+      
+        </div>
+
+          <footer>
+          <div>&copy Mikael Jönsson</div>
+
+          </footer>
+   
+        </body>
+        </html>
